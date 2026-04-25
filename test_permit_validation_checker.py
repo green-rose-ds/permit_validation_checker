@@ -15,3 +15,6 @@ def test_permit_number_correct_format_unhappy():
 
 def test_permit_number_letters_are_upper_unhappy():
     assert permit_format_check("aB1234Cd") == False
+
+def test_permit_number_is_accepted_happy():
+    assert permit_format_check("AB1234CD") == True
